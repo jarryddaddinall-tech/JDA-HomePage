@@ -939,6 +939,56 @@ a.app-card:focus-visible {
   box-shadow: var(--shadow-sm);
 }
 
+.music-demos-section {
+  max-width: min(40rem, 100%);
+}
+
+.music-demos-lede {
+  margin: 0 0 var(--space-lg);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.music-demos-grid {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 40rem) {
+  .music-demos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  }
+}
+
+.music-demo-card {
+  padding: var(--space-lg) var(--space-xl);
+  border-radius: calc(var(--radius) + 2px);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-sm), 0 0 0 1px color-mix(in srgb, var(--text) 4%, transparent);
+}
+
+.music-demo-title {
+  margin: 0 0 var(--space-xs);
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: var(--font-heading-track);
+  color: var(--text);
+}
+
+.music-demo-meta {
+  margin: 0 0 var(--space-md);
+  font-size: 0.8125rem;
+}
+
+.music-demo-audio {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 2.75rem;
+}
+
 .stream-section.page-section {
   margin-top: 0;
 }
