@@ -939,6 +939,37 @@ a.app-card:focus-visible {
   box-shadow: var(--shadow-sm);
 }
 
+.music-released {
+  max-width: min(48rem, 100%);
+}
+
+.music-released-intro {
+  margin: 0 0 var(--space-lg);
+  max-width: var(--max-read);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.music-released-embed {
+  margin-bottom: 0;
+}
+
+.music-stream-block {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.music-stream-heading {
+  margin: 0 0 var(--space-md);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
 .music-demos-section {
   max-width: min(40rem, 100%);
 }
