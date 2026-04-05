@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Logreps but better: mock web product page." />
+    <title>Logreps but better · Apps</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header" id="site-header"></header>
+    <script src="../site-header.js"></script>
+
+    <main id="main" class="main main--app-detail">
+      <nav class="app-detail-breadcrumb muted" aria-label="Breadcrumb">
+        <a href="../apps.html">Apps</a>
+        <span class="app-detail-bc-sep" aria-hidden="true">/</span>
+        <span>Logreps but better</span>
+      </nav>
+
+      <header class="app-detail-hero app-detail-hero--web">
+        <div class="app-detail-icon app-detail-icon--web" aria-hidden="true">Lb</div>
+        <div class="app-detail-hero-text">
+          <h1 class="app-detail-title">Logreps but better</h1>
+          <p class="app-detail-subtitle">Training logs that stay out of your way. This mock treats the product as web-first: one primary action to the live site.</p>
+          <p class="app-detail-meta-line muted">Web app</p>
+          <div class="app-detail-actions app-detail-actions--web">
+            <a class="app-detail-web-primary" href="https://example.com" target="_blank" rel="noopener noreferrer">Open site</a>
+            <span class="app-detail-get-note muted">Points to example.com for now. Swap for your real URL in this HTML or via config.</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="app-detail-section" aria-labelledby="preview-heading">
+        <h2 id="preview-heading" class="app-detail-h2">Product preview</h2>
+        <div class="app-detail-web-preview">
+          <div class="app-detail-web-chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="app-detail-web-canvas muted">Browser viewport placeholder (add a screenshot or embed later).</div>
+        </div>
+      </section>
+
+      <section class="app-detail-section app-detail-section--compact" aria-labelledby="ios-note-heading">
+        <h2 id="ios-note-heading" class="app-detail-h2">iOS</h2>
+        <p class="app-detail-prose">
+          If you ship a native or wrapped app later, duplicate the Mileage Tracker layout or link straight to the App Store from here.
+          <a href="mileage-tracker.html">See the iOS-style mock</a> for reference.
+        </p>
+      </section>
+
+      <p class="app-detail-back">
+        <a href="../apps.html">Back to all apps</a>
+      </p>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Side projects and apps: Mileage Tracker, Logreps, and more." />
+    <title>Apps · Jarryd Addinall</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="header" id="site-header"></header>
+    <script src="site-header.js"></script>
+
+    <main id="main" class="main">
+      <header class="page-head stack">
+        <h1>Apps & side projects</h1>
+        <p>
+          <strong class="apps-strong">In focus</strong> are larger previews. Below, <strong class="apps-strong">more ideas</strong> stay grouped by
+          theme—each card opens a <strong class="apps-strong">placeholder mock</strong> you can swap for real art later. Edit
+          <code class="inline-code">apps.html</code> to rename or recategorise; run
+          <code class="inline-code">python3 scripts/generate-app-mocks.py</code> after changing the generator if you add new slugs.
+        </p>
+      </header>
+
+      <section class="page-section" aria-labelledby="focus-heading">
+        <h2 id="focus-heading" class="h-label">In focus</h2>
+        <ul class="app-featured-grid" role="list">
+          <li>
+            <a
+              id="featured-mileage"
+              class="app-card app-card--featured"
+              href="./apps/mileage-tracker.html"
+            >
+              <div class="app-card-media">
+                <span class="app-status app-card-tag">Preview</span>
+                <img
+                  class="app-card-img"
+                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  width="800"
+                  height="500"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="app-card-body">
+                <span class="app-name">Mileage Tracker</span>
+                <span class="app-tagline">Trip and distance logging. Edit the tagline in apps.html when you have a pitch.</span>
+                <span class="app-cta">App Store style page</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              id="featured-logreps"
+              class="app-card app-card--featured"
+              href="./apps/logreps.html"
+            >
+              <div class="app-card-media">
+                <span class="app-status app-card-tag">Preview</span>
+                <img
+                  class="app-card-img"
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  width="800"
+                  height="500"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="app-card-body">
+                <span class="app-name">Logreps but better</span>
+                <span class="app-tagline">A sharper take on reps and training logs.</span>
+                <span class="app-cta">Web product page</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="page-section" aria-labelledby="ideas-heading">
+        <h2 id="ideas-heading" class="h-label">More ideas</h2>
+        <p class="shelf-intro muted">Placeholder images rotate through a small set—replace per card when you have screenshots.</p>
+
+        <div class="app-shelf-section">
+          <h3 id="cat-health" class="app-shelf-category">Health &amp; habits</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-health">
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/alcohol-free-at-home.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Alcohol Free At Home</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/hrv-app.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">HRV App</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/one-year-alcohol-free.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">One Year Alcohol Free</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/lifestyle-app.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">LifeStyle App</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="app-shelf-section">
+          <h3 id="cat-finance" class="app-shelf-category">Finance &amp; home admin</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-finance">
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/budget-and-finance-task-app.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Budget And Finance Task App</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/financial-hub.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Financial Hub</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/tax-app.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Tax App</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/tenancy-management-app-ios.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Tenancy Management App - iOS</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/homeclearapp.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">HomeclearApp</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/octopus-energy.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Octopus Energy</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/bin-day.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">bin day</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="app-shelf-section">
+          <h3 id="cat-notes" class="app-shelf-category">Notes &amp; reminders</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-notes">
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/echo-note.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Echo Note</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/finalnotes.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">FinalNotes</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/roam-notes-app.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Roam Notes App</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/bullet-notes-final.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">bullet Notes FInal</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/admin-reminders.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Admin Reminders</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="app-shelf-section">
+          <h3 id="cat-family" class="app-shelf-category">Family</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-family">
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/100-things-with-riley.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">100 Things with Riley</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/kids-chore-app.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Kids Chore App</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="app-shelf-section">
+          <h3 id="cat-music" class="app-shelf-category">Music &amp; audio</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-music">
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/mixcheck.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">MixCheck</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/songframe.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">SongFrame</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="app-shelf-section">
+          <h3 id="cat-productivity" class="app-shelf-category">Productivity</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-productivity">
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/focus-app.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Focus App</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/momentum.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Momentum</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="app-shelf-section">
+          <h3 id="cat-games" class="app-shelf-category">Games</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-games">
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/ios-lizard-game.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">iOS Lizard Game</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="app-shelf-section">
+          <h3 id="cat-proto" class="app-shelf-category">Prototypes &amp; experiments</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-proto">
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/asda-proto.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Asda Proto</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="app-card app-card--shelf" href="./apps/returns-proto.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag">Preview</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Returns Proto</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>
