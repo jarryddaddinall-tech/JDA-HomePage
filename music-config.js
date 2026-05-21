@@ -11,7 +11,6 @@ window.THE85_SOUND = {
   youtubeMusic: "",
   bandcamp: "",
   tidal: "",
-  instagram: "",
 
   spotifyEmbedUrl:
     "https://open.spotify.com/embed/artist/4u2g7E7RytlmzgomceqVFY?utm_source=generator",

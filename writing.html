@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content="Writing by Jarryd Addinall — Substack newsletter and site notes." />
+    <meta name="author" content="Jarryd Addinall" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://jarrydaddinall.com/writing.html" />
+    <link rel="alternate" type="application/rss+xml" title="Insights And Rhythms on Substack" href="https://jarrydaddinall.substack.com/feed" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jarryd Addinall" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="Writing · Jarryd Addinall" />
+    <meta property="og:description" content="Essays, notes, and Substack posts from Insights And Rhythms." />
+    <meta property="og:url" content="https://jarrydaddinall.com/writing.html" />
+    <meta property="og:image" content="https://jarrydaddinall.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Writing by Jarryd Addinall" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Writing · Jarryd Addinall" />
+    <meta name="twitter:description" content="Essays, notes, and Substack posts from Insights And Rhythms." />
+    <meta name="twitter:image" content="https://jarrydaddinall.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Writing by Jarryd Addinall" />
     <title>Writing · Jarryd Addinall</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +32,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Insights And Rhythms",
+        "description": "Essays, notes, and Substack posts from Jarryd Addinall.",
+        "url": "https://jarrydaddinall.com/writing.html",
+        "inLanguage": "en-GB",
+        "author": { "@id": "https://jarrydaddinall.com/#person" },
+        "isPartOf": { "@id": "https://jarrydaddinall.com/#website" }
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -25,46 +56,68 @@
         <p class="writing-intro">Essays on Substack; shorter notes and pages from this site follow.</p>
       </header>
 
-      <!-- Publication URL + embed: writing-config.js -->
+      <!-- Publication + links: writing-config.js -->
       <section class="writing-substack" aria-labelledby="substack-heading">
-        <p class="writing-substack-kicker">Substack · newsletter</p>
-        <h2 id="substack-heading" class="writing-substack-heading">
-          <a
-            id="writing-substack-link"
-            class="writing-substack-heading-link"
-            href="https://jarrydaddinall.substack.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Insights And Rhythms</a
-          >
-        </h2>
-        <div class="writing-embed-shell">
-          <iframe
-            id="writing-substack-embed"
-            src="https://jarrydaddinall.substack.com/embed"
-            title="Subscribe to Insights And Rhythms on Substack"
-            loading="lazy"
-            width="680"
-            height="420"
-          ></iframe>
+        <div class="writing-substack-head">
+          <p class="writing-substack-kicker">Substack · newsletter</p>
+          <h2 id="substack-heading" class="writing-substack-heading">
+            <a
+              id="writing-substack-link"
+              class="writing-substack-heading-link"
+              href="https://jarrydaddinall.substack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Insights And Rhythms</a
+            >
+          </h2>
+          <p class="writing-substack-summary">
+            New essays and longer notes live here first. Subscribe for updates, or open the publication to browse the full archive.
+          </p>
+          <p class="writing-substack-actions">
+            <a class="writing-substack-btn" href="https://jarrydaddinall.substack.com" target="_blank" rel="noopener noreferrer">Subscribe on Substack</a>
+            <a class="writing-substack-btn writing-substack-btn--ghost" href="https://jarrydaddinall.substack.com/archive" target="_blank" rel="noopener noreferrer"
+              >Read archive</a
+            >
+          </p>
         </div>
       </section>
 
-      <ul class="post-list" role="list">
-        <li>
-          <article class="post-row">
-            <a class="post-link" href="writing/hello-world.html">
-              <span class="post-title">Starting this corner of the internet</span>
-              <span class="post-desc">Placeholder article. Replace with your own.</span>
-            </a>
-            <time class="post-date" datetime="2025-03-19">19 Mar 2025</time>
-          </article>
-        </li>
-      </ul>
+      <section class="writing-feed" aria-labelledby="feed-heading" aria-busy="true">
+        <h2 id="feed-heading" class="writing-feed-heading">Latest on Substack</h2>
+        <div id="writing-feed-root" class="writing-feed-root" data-loading="true">
+          <p class="writing-feed-status">Loading posts…</p>
+        </div>
+      </section>
+
+      <section class="writing-site" aria-labelledby="site-writing-heading">
+        <h2 id="site-writing-heading" class="writing-site-heading">On this site</h2>
+        <ul class="post-list" role="list">
+          <li>
+            <article class="post-row">
+              <a class="post-link" href="writing/hello-world.html">
+                <span class="post-title">Starting this corner of the internet</span>
+                <span class="post-desc">Placeholder article. Replace with your own.</span>
+              </a>
+              <time class="post-date" datetime="2025-03-19">19 Mar 2025</time>
+            </article>
+          </li>
+        </ul>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="site-footer-inner">
+        <p class="site-footer-brand">Jarryd Addinall</p>
+        <p class="site-footer-links">
+          <a href="index.html">Home</a>
+          <a href="music.html">Music</a>
+          <a href="apps.html">Apps</a>
+          <a href="https://jarrydaddinall.substack.com" target="_blank" rel="noopener noreferrer">Substack</a>
+        </p>
+      </div>
+    </footer>
     <script src="writing-config.js"></script>
     <script src="writing-page.js"></script>
+    <script src="writing-feed.js"></script>
   </body>
 </html>

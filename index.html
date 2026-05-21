@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content="Jarryd Addinall: sound, apps, and writing in one place." />
+    <meta name="author" content="Jarryd Addinall" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://jarrydaddinall.com/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jarryd Addinall" />
+    <meta property="og:locale" content="en_GB" />
     <meta property="og:title" content="Jarryd Addinall" />
     <meta property="og:description" content="Sound, apps, and writing in one place." />
     <meta property="og:url" content="https://jarrydaddinall.com/" />
     <meta property="og:image" content="https://jarrydaddinall.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Jarryd Addinall — sound, apps, and writing" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jarryd Addinall" />
+    <meta name="twitter:description" content="Sound, apps, and writing in one place." />
+    <meta name="twitter:image" content="https://jarrydaddinall.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Jarryd Addinall — sound, apps, and writing" />
     <title>Jarryd Addinall</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +33,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://jarrydaddinall.com/#website",
+            "url": "https://jarrydaddinall.com/",
+            "name": "Jarryd Addinall",
+            "description": "Sound, apps, and writing in one place.",
+            "inLanguage": "en-GB",
+            "publisher": { "@id": "https://jarrydaddinall.com/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://jarrydaddinall.com/#person",
+            "name": "Jarryd Addinall",
+            "url": "https://jarrydaddinall.com/",
+            "sameAs": [
+              "https://open.spotify.com/artist/4u2g7E7RytlmzgomceqVFY",
+              "https://jarrydaddinall.substack.com"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -37,6 +76,7 @@
             This site is where my creativity meets, <strong class="hero-accent">The 85 Sound</strong> on the speakers, side projects on the shelf, and
             essays when the idea needs more than a caption.
           </p>
+          <p class="hero-one-liner">Independent creative work across music, product ideas, and long-form writing.</p>
         </section>
         <div class="hero-visual" aria-hidden="true">
           <img
@@ -110,8 +150,27 @@
           </a>
         </section>
       </div>
+
+      <section class="home-contact" aria-labelledby="contact-heading">
+        <p id="contact-heading" class="section-kicker">Work together</p>
+        <p class="home-contact-copy">
+          Want to collaborate, test a new app concept, or hear unreleased music first?
+          <a href="writing.html">Join the Substack</a> or message me on
+          <a href="https://instagram.com/the85sound" target="_blank" rel="noopener noreferrer">Instagram</a>.
+        </p>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="site-footer-inner">
+        <p class="site-footer-brand">Jarryd Addinall</p>
+        <p class="site-footer-links">
+          <a href="music.html">Music</a>
+          <a href="apps.html">Apps</a>
+          <a href="writing.html">Writing</a>
+          <a href="https://jarrydaddinall.substack.com" target="_blank" rel="noopener noreferrer">Substack</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

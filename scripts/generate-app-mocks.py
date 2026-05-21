@@ -27,7 +27,7 @@ CATEGORIES: list[tuple[str, list[tuple[str, str]]]] = [
             ("Tenancy Management App - iOS", "tenancy-management-app-ios"),
             ("HomeclearApp", "homeclearapp"),
             ("Octopus Energy", "octopus-energy"),
-            ("bin day", "bin-day"),
+            ("Bin Day", "bin-day"),
         ],
     ),
     (
@@ -70,7 +70,6 @@ CATEGORIES: list[tuple[str, list[tuple[str, str]]]] = [
     (
         "Prototypes & experiments",
         [
-            ("Asda Proto", "asda-proto"),
             ("Returns Proto", "returns-proto"),
         ],
     ),
@@ -94,6 +93,30 @@ def initials(title: str) -> str:
     return "?"
 
 
+SITE = "https://jarrydaddinall.com"
+OG_IMAGE = f"{SITE}/og-image.jpg"
+
+
+def seo_head(*, title: str, description: str, path: str, robots: str = "index, follow") -> str:
+    url = f"{SITE}/{path.lstrip('/')}"
+    safe_title = html.escape(title)
+    safe_desc = html.escape(description)
+    return f"""    <meta name="description" content="{safe_desc}" />
+    <meta name="author" content="Jarryd Addinall" />
+    <meta name="robots" content="{robots}" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="{url}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jarryd Addinall" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="{safe_title}" />
+    <meta property="og:description" content="{safe_desc}" />
+    <meta property="og:url" content="{url}" />
+    <meta property="og:image" content="{OG_IMAGE}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{safe_title}</title>"""
+
+
 def write_mock(name: str, slug: str, category: str) -> None:
     if slug in SKIP:
         return
@@ -101,13 +124,20 @@ def write_mock(name: str, slug: str, category: str) -> None:
     ab = initials(name)
     safe_name = html.escape(name)
     safe_cat = html.escape(category)
+    page_title = f"{name} · Apps"
+    page_desc = f"{name}: placeholder app concept on Jarryd Addinall's apps page."
+    head = seo_head(
+        title=page_title,
+        description=page_desc,
+        path=f"apps/{slug}.html",
+        robots="noindex, follow",
+    )
     content = f"""<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{safe_name}: placeholder app page." />
-    <title>{safe_name} · Apps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+{head}
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
