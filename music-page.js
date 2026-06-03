@@ -89,7 +89,29 @@
     });
   }
 
-  streamLinks();
-  setupSpotifyEmbed();
-  setupStreamClicks();
+  function setupDemoPlayers() {
+    if (typeof Plyr === "undefined") return;
+    document.querySelectorAll(".music-demo-audio").forEach(function (el) {
+      if (el.plyr) return;
+      new Plyr(el, {
+        controls: ["play", "progress", "current-time", "duration", "mute", "volume"],
+        settings: [],
+        invertTime: false,
+        volume: 0.85,
+      });
+    });
+  }
+
+  function run() {
+    streamLinks();
+    setupSpotifyEmbed();
+    setupStreamClicks();
+    setupDemoPlayers();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", run);
+  } else {
+    run();
+  }
 })();
