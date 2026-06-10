@@ -101,13 +101,29 @@
       <header class="music-hero stack">
         <p class="lede">Music</p>
         <h1>The 85 Sound</h1>
+        <p class="music-hero-jump muted">
+          <a href="#demos" class="music-hero-jump-link" data-music-tab="demos">Works in progress</a>
+          <span aria-hidden="true"> · </span>
+          unreleased sketches and session mixes on this site.
+        </p>
       </header>
 
       <noscript>
         <p class="music-noscript muted">Turn on JavaScript to load your streaming links from <code class="inline-code">music-config.js</code>, or paste URLs directly in this file.</p>
       </noscript>
 
-      <section class="page-section music-released" aria-labelledby="released-heading">
+      <div class="music-tabs-wrap">
+        <div class="music-tabs" role="tablist" aria-label="Music catalogue">
+          <button type="button" class="music-tab" role="tab" id="music-tab-released" aria-controls="music-panel-released" aria-selected="true" data-music-tab="released">
+            Released
+          </button>
+          <button type="button" class="music-tab" role="tab" id="music-tab-demos" aria-controls="music-panel-demos" aria-selected="false" data-music-tab="demos">
+            In progress
+          </button>
+        </div>
+      </div>
+
+      <section class="music-panel page-section music-released" id="music-panel-released" role="tabpanel" aria-labelledby="music-tab-released" data-music-panel="released">
         <h2 id="released-heading" class="h-label">Released</h2>
         <p class="music-released-intro muted">
           Published tracks on streaming services—listen in the player, then open your preferred app below.
@@ -196,29 +212,19 @@
         </div>
       </section>
 
-      <section class="page-section music-demos-section" aria-labelledby="demos-heading">
+      <section
+        class="music-panel page-section music-demos-section"
+        id="music-panel-demos"
+        role="tabpanel"
+        aria-labelledby="music-tab-demos"
+        data-music-panel="demos"
+        hidden
+      >
         <h2 id="demos-heading" class="h-label">Demos &amp; works in progress</h2>
         <p class="music-demos-lede muted">
-          Unreleased mixes and sketches—only on this site, not on streaming.
+          Unreleased mixes and sketches—only on this site, not on streaming. Each project includes notes on what I am working on and earlier versions.
         </p>
-        <div class="music-demos-list">
-          <article class="music-demo-card">
-            <div class="music-demo-art" aria-hidden="true">
-              <span class="music-demo-art-mark">85</span>
-            </div>
-            <div class="music-demo-body">
-              <div class="music-demo-head">
-                <h3 class="music-demo-title">Coming Down</h3>
-                <p class="music-demo-meta muted">Work in progress · session 26 March</p>
-              </div>
-              <div class="music-demo-player">
-                <audio class="music-demo-audio" playsinline preload="metadata">
-                  <source src="music/demos/coming-down-26-march.m4a" type="audio/mp4" />
-                </audio>
-              </div>
-            </div>
-          </article>
-        </div>
+        <div id="music-demos-root" class="music-demos-root"></div>
       </section>
     </main>
 
@@ -253,6 +259,7 @@
         window.THE85_SOUND = merged;
       })();
     </script>
+    <script src="music-demos.js" defer></script>
     <script src="music-page.js" defer></script>
   </body>
 </html>
