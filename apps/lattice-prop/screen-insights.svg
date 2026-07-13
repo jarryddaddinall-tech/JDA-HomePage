@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <rect width="390" height="844" fill="#F6F6F4"/>
+  <text x="24" y="72" fill="#0A0A0A" font-family="system-ui,sans-serif" font-size="28" font-weight="700">Insights</text>
+  <text x="24" y="98" fill="#6B6B6B" font-family="system-ui,sans-serif" font-size="14">Portfolio brief · updated today</text>
+  <rect x="24" y="122" width="342" height="180" rx="20" fill="#0A0A0A"/>
+  <text x="44" y="156" fill="#FFFFFF" opacity="0.72" font-family="system-ui,sans-serif" font-size="11" font-weight="600" letter-spacing="1">WHAT TO DO NEXT</text>
+  <text x="44" y="188" fill="#FFFFFF" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Renewals cluster in the next 30 days</text>
+  <text x="44" y="220" fill="#FFFFFF" opacity="0.78" font-family="system-ui,sans-serif" font-size="13">Prioritise gas safety at Oak Lane and the Harrogate tenancy renewal before yield dips on the void in Selby.</text>
+  <rect x="44" y="248" width="120" height="34" rx="12" fill="#599E87"/>
+  <text x="68" y="269" fill="#FFFFFF" font-family="system-ui,sans-serif" font-size="12" font-weight="600">Generate brief</text>
+  <rect x="24" y="324" width="342" height="160" rx="20" fill="#FFFFFF" filter="drop-shadow(0 8px 18px rgba(0,0,0,0.06))"/>
+  <text x="44" y="356" fill="#6B6B6B" font-family="system-ui,sans-serif" font-size="11">PERFORMANCE</text>
+  <polyline points="44,452 92,420 140,430 188,392 236,404 284,360 332,372" fill="none" stroke="#599E87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="44" y1="464" x2="332" y2="464" stroke="#0A0A0A" stroke-opacity="0.06"/>
+  <text x="44" y="384" fill="#0A0A0A" font-family="system-ui,sans-serif" font-size="22" font-weight="700">Net cashflow trend</text>
+  <rect x="24" y="504" width="342" height="88" rx="20" fill="#FFFFFF" filter="drop-shadow(0 8px 18px rgba(0,0,0,0.06))"/>
+  <text x="44" y="536" fill="#6B6B6B" font-family="system-ui,sans-serif" font-size="11">HMLR BENCHMARK</text>
+  <text x="44" y="564" fill="#0A0A0A" font-family="system-ui,sans-serif" font-size="15" font-weight="600">Terraced avg +4.2% YoY in York</text>
+  <text x="44" y="584" fill="#148040" font-family="system-ui,sans-serif" font-size="13">Your blended yield sits above local median</text>
+</svg>
