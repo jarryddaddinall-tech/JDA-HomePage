@@ -13,6 +13,7 @@
     if (file === "music.html") return "music";
     if (path.indexOf("/writing/") !== -1 || file === "writing.html") return "writing";
     if (path.indexOf("/apps/") !== -1 || file === "apps.html") return "apps";
+    if (file === "cv.html") return "cv";
     return "";
   }
 
@@ -43,6 +44,11 @@
     'writing.html"' +
     aria("writing") +
     ">Writing</a>" +
+    '<a href="' +
+    base +
+    'cv.html"' +
+    aria("cv") +
+    ">CV</a>" +
     "</nav>" +
     "</div>";
 })();
