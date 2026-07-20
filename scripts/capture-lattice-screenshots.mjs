@@ -16,15 +16,20 @@ async function shot(page, name, opts = {}) {
 const browser = await chromium.launch();
 const page = await browser.newPage();
 
+await page.addInitScript(() => {
+  sessionStorage.setItem("latticeBtlUnlocked_v1", JSON.stringify(["mike"]));
+});
+
 await page.goto(url, { waitUntil: "networkidle", timeout: 90000 });
 await page.waitForTimeout(2000);
 
 await page.setViewportSize({ width: 1280, height: 900 });
 await shot(page, "screen-marketing.png");
 
-const enter = page.locator('[data-enter-app="m8"]').first();
-await enter.click();
-await page.waitForTimeout(3000);
+await page.locator('[data-marketing-page="login"]').first().click();
+await page.waitForTimeout(800);
+await page.locator('[data-login-user="mike"]').click();
+await page.waitForTimeout(3500);
 
 await page.waitForSelector("#panel-m8, .btl-subnav-btn", { timeout: 30000 });
 
@@ -34,7 +39,7 @@ await page.waitForTimeout(1200);
 await shot(page, "screen-overview.png");
 
 const nav = (label) =>
-  page.locator('.btl-subnav-btn, [data-btl-view-nav]').filter({ hasText: new RegExp(label, "i") }).first();
+  page.locator(".btl-subnav-btn, [data-btl-view-nav]").filter({ hasText: new RegExp(label, "i") }).first();
 
 if (await nav("Properties").count()) {
   await nav("Properties").click();
