@@ -1,5 +1,4 @@
 import { chromium } from "playwright";
-import { mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,7 +16,8 @@ const browser = await chromium.launch();
 const page = await browser.newPage();
 
 await page.addInitScript(() => {
-  sessionStorage.setItem("latticeBtlUnlocked_v1", JSON.stringify(["mike"]));
+  localStorage.setItem("latticeBtlActiveUser_v1", "demo");
+  sessionStorage.removeItem("latticeBtlUnlocked_v1");
 });
 
 await page.goto(url, { waitUntil: "networkidle", timeout: 90000 });
@@ -26,9 +26,7 @@ await page.waitForTimeout(2000);
 await page.setViewportSize({ width: 1280, height: 900 });
 await shot(page, "screen-marketing.png");
 
-await page.locator('[data-marketing-page="login"]').first().click();
-await page.waitForTimeout(800);
-await page.locator('[data-login-user="mike"]').click();
+await page.locator('[data-enter-app="m8"]').first().click();
 await page.waitForTimeout(3500);
 
 await page.waitForSelector("#panel-m8, .btl-subnav-btn", { timeout: 30000 });
