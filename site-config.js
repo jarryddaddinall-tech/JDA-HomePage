@@ -14,4 +14,6 @@ window.SITE = {
   twitterSite: "",
   substackUrl: "https://jarrydaddinall.substack.com",
   spotifyArtistUrl: "https://open.spotify.com/artist/4u2g7E7RytlmzgomceqVFY",
+  clearYearAppStoreUrl: "https://apps.apple.com/app/clear-year/id6787916644",
+  clearYearPageUrl: "https://jarrydaddinall.com/apps/clear-year.html",
 };

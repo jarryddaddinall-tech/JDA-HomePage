@@ -453,6 +453,22 @@ a:focus-visible {
   color: var(--text-tertiary);
 }
 
+.home-shipped {
+  margin: var(--space-sm) 0 0;
+  max-width: 36rem;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+.home-shipped a {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.home-shipped a:hover {
+  color: var(--text);
+}
+
 .section-kicker {
   margin: 0 0 var(--space-lg);
   font-family: var(--font-sans);
@@ -538,6 +554,26 @@ a:focus-visible {
   padding: 0.3em 0.55em;
   font-size: 0.5625rem;
   letter-spacing: 0.1em;
+}
+
+.app-card-tag--store {
+  color: #000000;
+  background: #ffffff;
+}
+
+.app-card-tag--demo {
+  color: #000000;
+  background: #eef5ef;
+}
+
+.app-card-tag--concept {
+  color: var(--text-secondary);
+  background: color-mix(in srgb, var(--bg-muted) 88%, #ffffff);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.app-card-media--shelf .app-card-img--icon {
+  padding: 22%;
 }
 
 .pillar-tag,
@@ -850,6 +886,24 @@ a.app-card:focus-visible {
 
 .app-shelf-section:last-of-type {
   margin-bottom: 0;
+}
+
+.app-catalog > .app-shelf-section + .app-shelf-section {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--text) 7%, transparent);
+}
+
+.app-shelf-section--nested {
+  margin-bottom: var(--space-xl);
+}
+
+.app-shelf-section--nested:last-child {
+  margin-bottom: 0;
+}
+
+.app-shelf-section--nested .app-shelf-category {
+  margin-top: 0;
 }
 
 .app-shelf-category {
@@ -1219,6 +1273,25 @@ a.app-card:focus-visible {
 }
 
 .site-footer-links a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.site-footer-note {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-tertiary);
+}
+
+.site-footer-note a {
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.site-footer-note a:hover {
   color: var(--text);
   text-decoration: underline;
 }

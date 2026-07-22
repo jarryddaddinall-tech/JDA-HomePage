@@ -57,74 +57,86 @@
         </p>
       </header>
 
-      <section class="page-section" aria-labelledby="focus-heading">
-        <h2 id="focus-heading" class="h-label">In focus</h2>
-        <ul class="app-featured-grid" role="list">
-          <li>
-            <a id="featured-clear-year" class="app-card app-card--featured" href="./apps/clear-year.html">
-              <div class="app-card-media">
-                <span class="app-status app-card-tag">App Store</span>
-                <img class="app-card-img app-card-img--icon" src="./apps/clear-year/icon.png" width="800" height="500" alt="" loading="lazy" decoding="async" />
-              </div>
-              <div class="app-card-body">
-                <span class="app-name">Clear Year</span>
-                <span class="app-tagline">A calm sobriety companion — streaks, journal, milestones, and your why.</span>
-                <span class="app-cta">View app</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a id="featured-lattice-prop" class="app-card app-card--featured" href="./apps/lattice-prop.html">
-              <div class="app-card-media">
-                <span class="app-status app-card-tag">Live demo</span>
-                <img class="app-card-img app-card-img--icon" src="./apps/lattice-prop/icon.png" width="800" height="500" alt="" loading="lazy" decoding="async" />
-              </div>
-              <div class="app-card-body">
-                <span class="app-name">Lattice Prop</span>
-                <span class="app-tagline">UK buy-to-let portfolio software — performance, renewals, and insights.</span>
-                <span class="app-cta">View app</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a id="featured-mileage" class="app-card app-card--featured" href="./apps/mileage-tracker.html">
-              <div class="app-card-media">
-                <span class="app-status app-card-tag">Concept</span>
-                <img class="app-card-img" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=800&amp;q=80" width="800" height="500" alt="" loading="lazy" decoding="async" />
-              </div>
-              <div class="app-card-body">
-                <span class="app-name">Mileage Tracker</span>
-                <span class="app-tagline">Trip and distance logging for drivers who care about the numbers.</span>
-                <span class="app-cta">View concept</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a id="featured-logreps" class="app-card app-card--featured" href="./apps/logreps.html">
-              <div class="app-card-media">
-                <span class="app-status app-card-tag">Concept</span>
-                <img class="app-card-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" width="800" height="500" alt="" loading="lazy" decoding="async" />
-              </div>
-              <div class="app-card-body">
-                <span class="app-name">Logreps but better</span>
-                <span class="app-tagline">A sharper take on reps and training logs.</span>
-                <span class="app-cta">View concept</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="page-section" aria-labelledby="more-heading">
-        <h2 id="more-heading" class="h-label">More in development</h2>
+      <section class="page-section app-catalog" aria-label="Apps by status">
+        <div class="app-shelf-section">
+          <h2 id="tier-store" class="h-label">App Store</h2>
+          <p class="shelf-intro muted">Shipped and available to download.</p>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="tier-store">
+            <li>
+              <a id="featured-clear-year" class="app-card app-card--shelf" href="./apps/clear-year.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag app-card-tag--store">App Store</span>
+                  <img class="app-card-img app-card-img--icon" src="./apps/clear-year/icon.png" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Clear Year</span>
+                  <span class="app-shelf-desc">A calm sobriety companion — streaks, journal, milestones, and your why.</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
 
         <div class="app-shelf-section">
+          <h2 id="tier-demo" class="h-label">Live demos</h2>
+          <p class="shelf-intro muted">Try these in the browser — interactive prototypes, not App Store builds.</p>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="tier-demo">
+            <li>
+              <a id="featured-lattice-prop" class="app-card app-card--shelf" href="./apps/lattice-prop.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag app-card-tag--demo">Live demo</span>
+                  <img class="app-card-img app-card-img--icon" src="./apps/lattice-prop/icon.png" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Lattice Prop</span>
+                  <span class="app-shelf-desc">UK buy-to-let portfolio software — performance, renewals, and insights.</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="app-shelf-section">
+          <h2 id="tier-concept" class="h-label">Concepts</h2>
+          <p class="shelf-intro muted">Ideas and mock pages — design explorations, not live products.</p>
+
+        <div class="app-shelf-section app-shelf-section--nested">
+          <h3 id="cat-product" class="app-shelf-category">Product &amp; tools</h3>
+          <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-product">
+            <li>
+              <a id="featured-mileage" class="app-card app-card--shelf" href="./apps/mileage-tracker.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Mileage Tracker</span>
+                  <span class="app-shelf-desc">Trip and distance logging for drivers who care about the numbers.</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a id="featured-logreps" class="app-card app-card--shelf" href="./apps/logreps.html">
+                <div class="app-card-media app-card-media--shelf">
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
+                  <img class="app-card-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
+                </div>
+                <div class="app-card-body app-card-body--shelf">
+                  <span class="app-shelf-name">Logreps but better</span>
+                  <span class="app-shelf-desc">A sharper take on reps and training logs.</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="app-shelf-section app-shelf-section--nested">
           <h3 id="cat-health" class="app-shelf-category">Health &amp; habits</h3>
           <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-health">
             <li>
               <a class="app-card app-card--shelf" href="./apps/hrv-app.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -136,13 +148,13 @@
           </ul>
         </div>
 
-        <div class="app-shelf-section">
+        <div class="app-shelf-section app-shelf-section--nested">
           <h3 id="cat-music" class="app-shelf-category">Music &amp; audio</h3>
           <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-music">
             <li>
               <a class="app-card app-card--shelf" href="./apps/mixcheck.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -154,7 +166,7 @@
             <li>
               <a class="app-card app-card--shelf" href="./apps/songframe.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -166,13 +178,13 @@
           </ul>
         </div>
 
-        <div class="app-shelf-section">
+        <div class="app-shelf-section app-shelf-section--nested">
           <h3 id="cat-productivity" class="app-shelf-category">Productivity</h3>
           <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-productivity">
             <li>
               <a class="app-card app-card--shelf" href="./apps/focus-app.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -184,7 +196,7 @@
             <li>
               <a class="app-card app-card--shelf" href="./apps/momentum.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -196,13 +208,13 @@
           </ul>
         </div>
 
-        <div class="app-shelf-section">
+        <div class="app-shelf-section app-shelf-section--nested">
           <h3 id="cat-notes" class="app-shelf-category">Notes &amp; reminders</h3>
           <ul class="app-shelf app-shelf--cards" role="list" aria-labelledby="cat-notes">
             <li>
               <a class="app-card app-card--shelf" href="./apps/echo-note.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -214,7 +226,7 @@
             <li>
               <a class="app-card app-card--shelf" href="./apps/finalnotes.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -226,7 +238,7 @@
             <li>
               <a class="app-card app-card--shelf" href="./apps/roam-notes-app.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -238,7 +250,7 @@
             <li>
               <a class="app-card app-card--shelf" href="./apps/bullet-notes-final.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -250,7 +262,7 @@
             <li>
               <a class="app-card app-card--shelf" href="./apps/admin-reminders.html">
                 <div class="app-card-media app-card-media--shelf">
-                  <span class="app-card-tag">Concept</span>
+                  <span class="app-card-tag app-card-tag--concept">Concept</span>
                   <img class="app-card-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&amp;fit=crop&amp;w=400&amp;q=80" width="400" height="250" alt="" loading="lazy" decoding="async" />
                 </div>
                 <div class="app-card-body app-card-body--shelf">
@@ -260,6 +272,7 @@
               </a>
             </li>
           </ul>
+        </div>
         </div>
       </section>
     </main>
@@ -272,6 +285,10 @@
           <a href="music.html">Music</a>
           <a href="writing.html">Writing</a>
           <a href="https://jarrydaddinall.substack.com" target="_blank" rel="noopener noreferrer">Substack</a>
+        </p>
+        <p class="site-footer-note muted">
+          <a href="https://apps.apple.com/app/clear-year/id6787916644" target="_blank" rel="noopener noreferrer">Clear Year</a>
+          on the App Store
         </p>
       </div>
     </footer>
